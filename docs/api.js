@@ -1,4 +1,10 @@
 async function predict() {
+  document.getElementById("prediction").innerText =
+    "🔄 Waking up server... please wait.";
+  document.getElementById("prediction").style.color = "gray";
+  document.getElementById("churn_probability").innerText = "";
+  document.getElementById("probability_text").innerText = "";
+  document.getElementById("prob-bar").style.width = "0%";
   const data = {
     type: document.getElementById("type").value,
     monthly_charges: parseFloat(
