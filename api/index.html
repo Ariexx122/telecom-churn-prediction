@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Churn Predictor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Customer Churn Prediction</h2>
+
+      <h4 style="padding: 0; margin: 0">Contract Type</h4>
+
+      <select id="type">
+        <option value="Month-to-month">Month-to-month</option>
+        <option value="One year">One year</option>
+        <option value="Two year">Two year</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Monthly Charges</h4>
+
+      <input id="monthly_charges" type="number" placeholder="Monthly Charges" />
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Tenure Days</h4>
+
+      <input id="tenure_days" type="number" placeholder="Tenure Days" />
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Internet Service</h4>
+
+      <select id="internet_service">
+        <option value="DSL">DSL</option>
+        <option value="Fiber optic">Fiber optic</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Paperless Billing</h4>
+
+      <select id="paperless_billing">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Payment Method</h4>
+
+      <select id="payment_method">
+        <option value="Electronic check">Electronic check</option>
+        <option value="Mailed check">Mailed check</option>
+        <option value="Bank transfer (automatic)">
+          Bank transfer (automatic)
+        </option>
+        <option value="Credit card (automatic)">Credit card (automatic)</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Online Security</h4>
+
+      <select id="online_security">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <h4 style="padding: 0; margin: 15px 0 0 0">Online Backup</h4>
+      <select id="online_backup">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Device Protection</h4>
+
+      <select id="device_protection">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Tech Support</h4>
+
+      <select id="tech_support">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Streaming TV</h4>
+      <select id="streaming_tv">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Streaming Movies</h4>
+
+      <select id="streaming_movies">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Gender</h4>
+
+      <select id="gender">
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Senior Citizen</h4>
+
+      <select id="senior_citizen">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Partner</h4>
+
+      <select id="partner">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Dependents</h4>
+
+      <select id="dependents">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Multiple Lines</h4>
+
+      <select id="multiple_lines">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Monthly Contract</h4>
+
+      <select id="monthly_contract">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Number of Services</h4>
+
+      <select id="num_services">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Start Month</h4>
+
+      <select id="start_month">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+
+      <h4 style="padding: 0; margin: 15px 0 0 0">Start Year</h4>
+
+      <select id="start_year">
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+      </select>
+
+      <button onclick="predict()">Predict</button>
+
+      <div
+        id="prediction"
+        style="padding: 10px 0px 25px 0px; font-size: 30px; font-weight: bold"
+      ></div>
+      <div
+        id="churn_probability"
+        style="padding: 5px 0px 20px 0px; font-size: 20px; font-weight: bold"
+      ></div>
+      <div
+        id="probability_text"
+        style="padding: 10px 0px 20px 0px; font-size: 20px; font-weight: bold"
+      ></div>
+      <div class="bar-container">
+        <div id="prob-bar"></div>
+      </div>
+    </div>
+    <script src="api.js"></script>
+  </body>
+</html>
