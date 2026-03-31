@@ -27,13 +27,16 @@ async function predict() {
     tenure_days: parseInt(document.getElementById("tenure_days").value),
   };
 
-  const response = await fetch("http://127.0.0.1:8000/predict-churn/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
+  const response = await fetch(
+    "https://telecom-churn-prediction-5ue1.onrender.com/predict-churn/",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
     },
-    body: JSON.stringify(data),
-  });
+  );
 
   const result = await response.json();
 
